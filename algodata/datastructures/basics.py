@@ -57,6 +57,6 @@ class Queue(ParentStructure):
         Removes and returns the item from the front of the queue (left)
         """
         try:
-            self.items.pop(0)
+            return self.items.pop(0)
         except IndexError:
             raise Exception('The queue is empty')

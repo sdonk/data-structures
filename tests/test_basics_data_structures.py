@@ -17,7 +17,11 @@ def test_stack_add_elements():
 
 
 def test_stack_pop_elements():
-    pass
+    stack = Stack()
+    stack.push(1)
+    stack.push(2)
+    assert stack.pop() == 2
+    assert stack.size == 1
 
 
 def test_queue_enqueue_elements():
@@ -30,4 +34,8 @@ def test_queue_enqueue_elements():
 
 
 def test_queue_dequeue_elements():
-    pass
+    queue = Queue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    assert queue.dequeue() == 1
+    assert queue.size == 1
