@@ -1,6 +1,6 @@
-========================================
-Data structures and algorithms in Python
-========================================
+==========================================
+Data structures and algorithms in Python 3
+==========================================
 
 Playing around data structures and algorithms in Python 3.
 
