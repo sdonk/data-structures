@@ -1,10 +1,4 @@
-class Stack:
-    """
-    Ordered LIFO
-
-    https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks
-    """
-
+class ParentStructure:
     def __init__(self):
         self.items = []
 
@@ -15,6 +9,14 @@ class Stack:
     @property
     def size(self):
         return len(self.items)
+
+
+class Stack(ParentStructure):
+    """
+    Ordered LIFO
+
+    https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks
+    """
 
     def push(self, item):
         """
@@ -32,7 +34,7 @@ class Stack:
             raise Exception('The stack is empty')
 
 
-class Queue:
+class Queue(ParentStructure):
     """
     Ordered FIFO
 
@@ -43,17 +45,6 @@ class Queue:
     doing inserts or pops from the beginning of a list is slow (because all of the other elements have to be shifted by one).
     To implement a queue, use collections.deque which was designed to have fast appends and pops from both ends
     """
-
-    def __init__(self):
-        self.items = []
-
-    @property
-    def is_empty(self):
-        return self.items == []
-
-    @property
-    def size(self):
-        return len(self.items)
 
     def enqueue(self, item):
         """
