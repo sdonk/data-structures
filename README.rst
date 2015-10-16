@@ -1,6 +1,9 @@
-==========================================
-Data structures and algorithms in Python 3
-==========================================
+========================================
+Data structures and algorithms in Python
+========================================
+
+.. image:: https://travis-ci.org/sdonk/data-structures.svg
+    :target: https://travis-ci.org/sdonk/data-structures
 
 Playing around data structures and algorithms in Python 3.
 
