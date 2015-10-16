@@ -1,7 +1,6 @@
 language: python
 python:
   - 3.5
-sudo: false
-install: pip install --user .
+install: pip install .
 script:
 - py.test -vv
